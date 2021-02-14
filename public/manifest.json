@@ -1,6 +1,9 @@
 {
   "short_name": "Francisco Casiano",
   "name": "Francisco Casiano's Website",
+  "dir": "ltr",
+  "lang": "en",
+  "description": "Francisco's Personal Website and Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +21,17 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
+  "start_url": "https://franciscocasiano.com",
+  "display": "browser",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#353b48",
+  "categories": [
+    "games",
+    "utilities",
+    "weather",
+    "shopping",
+    "photo",
+    "music",
+    "social"
+  ]
 }
