@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// TODO: Change everything named "App" to "home", including references
 function App() {
   return (
     <div className="App">
