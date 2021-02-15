@@ -3,6 +3,7 @@ import './home-page.css';
 
 function Header() {
   return (
+    // TODO: Remake the header with the new created components in "interface-components"
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
