@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './home.css';
+import logo from '../logo.svg';
+import './home-page.css';
 
 // TODO: Change everything named "App" to "home", including references
 function Header() {
@@ -8,7 +8,7 @@ function Header() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/home.tsx</code> and save to reload.
+          Edit <code>src/home/home-page.tsx</code> and save to reload.
         </p>
         <a
           className="App-link"
