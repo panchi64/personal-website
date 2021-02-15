@@ -1,7 +1,6 @@
 import logo from '../logo.svg';
 import './home-page.css';
 
-// TODO: Change everything named "App" to "home", including references
 function Header() {
   return (
     <div className="App">
