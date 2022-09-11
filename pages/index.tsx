@@ -44,7 +44,7 @@ const Home: NextPage = () => {
             <Card.Body>
               <Row justify="center">
                 <Text blockquote lang="en-US">
-                  <h3>The website is under development.</h3>
+                  <h3>The website is in development.</h3>
                 </Text>
               </Row>
               <Loading type="points-opacity" />
