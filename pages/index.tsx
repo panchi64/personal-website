@@ -7,10 +7,12 @@ import {
   Text,
   Container,
 } from "@nextui-org/react";
-import type { NextPage } from "next";
 import { useTheme as useNextTheme } from "next-themes";
-import Head from "next/head";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import styles from "styles/Home.module.css";
+
+import type { NextPage } from "next";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   const { setTheme } = useNextTheme();
@@ -59,6 +61,7 @@ const Home: NextPage = () => {
                   target="_blank"
                   href="https://github.com/panchi64"
                 >
+                  <FaGithub />
                   GitHub
                 </Link>
                 <Spacer x={2} />
@@ -67,6 +70,7 @@ const Home: NextPage = () => {
                   target="_blank"
                   href="https://www.linkedin.com/in/francisco-a-casiano-rosado/"
                 >
+                  <FaLinkedin />
                   LinkedIn
                 </Link>
               </Row>
