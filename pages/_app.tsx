@@ -7,13 +7,12 @@ const lightTheme = createTheme({
   type: 'light',
   theme: {}
 })
-
 const darkTheme = createTheme({
   type: 'dark',
   theme: {}
 })
 
-function MyApp({Component, pageProps}: AppProps) {
+function App({Component, pageProps}: AppProps) {
   return (
       <NextThemesProvider
           defaultTheme="system"
@@ -30,4 +29,4 @@ function MyApp({Component, pageProps}: AppProps) {
   );
 }
 
-export default MyApp;
+export default App;
