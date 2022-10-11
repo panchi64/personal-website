@@ -10,6 +10,11 @@ const Home: NextPage = () => {
   const { setTheme } = useNextTheme();
   setTheme("dark");
 
+  function showContactModal() {
+    // TODO: Create a component to show as a modal when the button is pressed
+    console.log("Contact Modal hass been pressed!");
+  }
+
   return (
     <>
       <Head>
@@ -25,7 +30,16 @@ const Home: NextPage = () => {
           { href: "/projects", name: "Projects" },
           { href: "/blog", name: "Blog" },
         ]}
-        buttons={[{ id: "contact", component: <Button auto flat color="success">Contact</Button> }]}
+        buttons={[
+          {
+            id: "contact",
+            component: (
+              <Button auto flat color="gradient" onPress={showContactModal}>
+                Contact
+              </Button>
+            ),
+          },
+        ]}
       />
     </>
   );
