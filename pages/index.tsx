@@ -1,19 +1,14 @@
 import { useTheme as useNextTheme } from "next-themes";
 
-import CustomizedNavbar from "../components/customized-navbar";
+import CustomizedNavbar from "../components/ui/customized-navbar";
 
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Button } from "@nextui-org/react";
+import DefaultContactModalwButton from "../components/ui/modals/default-contact-modal-w-button";
 
 const Home: NextPage = () => {
   const { setTheme } = useNextTheme();
   setTheme("dark");
-
-  function showContactModal() {
-    // TODO: Create a component to show as a modal when the button is pressed
-    console.log("Contact Modal hass been pressed!");
-  }
 
   return (
     <>
@@ -33,11 +28,7 @@ const Home: NextPage = () => {
         buttons={[
           {
             id: "contact",
-            component: (
-              <Button auto flat color="gradient" onPress={showContactModal}>
-                Contact
-              </Button>
-            ),
+            component: <DefaultContactModalwButton />,
           },
         ]}
       />

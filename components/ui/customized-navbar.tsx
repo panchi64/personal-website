@@ -1,7 +1,7 @@
 import { Button, Navbar, Text } from "@nextui-org/react";
 import { NextPage } from "next";
-import { NavBarLinks } from "./interfaces/navbar/NavBarLinks";
-import { NavBarButtons } from "./interfaces/navbar/NavBarButtons";
+import { NavBarLinks } from "../ts-interfaces/navbar/NavBarLinks";
+import { NavBarButtons } from "../ts-interfaces/navbar/NavBarButtons";
 
 const CustomizedNavbar: NextPage<{
   links?: Array<NavBarLinks>;
