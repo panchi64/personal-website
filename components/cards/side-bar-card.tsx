@@ -9,7 +9,6 @@ const SideBarCard: NextPage = () => {
   // this means enabling the capacity of changing text, images, and links within the sidebar as well as its position on the page (left or right or bottom)
 
   return (
-    // TODO: Add the ability to change the position in the line below
     <div className={styles["sidebar-container"]}>
       <div className={styles["sidebar-right"]}>
         <Card variant="bordered">
