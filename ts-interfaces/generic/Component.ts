@@ -1,6 +1,6 @@
 import React from "react";
 
-export interface NavBarButtons {
+export interface Component {
   id: string;
   component: React.ReactNode;
 }
