@@ -1,12 +1,9 @@
-import {
-  Button,
-  Input,
-  Modal,
-  Spacer,
-  Text,
-  Textarea,
-} from "@nextui-org/react";
 import { NextPage } from "next";
+
+import { Button, Input, Modal, Text, Textarea } from "@nextui-org/react";
+import { FaEnvelope, FaUser } from "react-icons/fa";
+
+import styles from "../../../styles/components/default-contact-modal-w-button.module.css";
 
 const DefaultContactModalwButton: NextPage = (props) => {
   function showContactModal() {
@@ -14,6 +11,9 @@ const DefaultContactModalwButton: NextPage = (props) => {
     console.log("Contact Modal hass been pressed!");
   }
 
+  function sendMessage() {
+    // TODO: Create a function to send the message to firebase or e-mail
+  }
   return (
     <>
       <Button auto shadow onPress={showContactModal}>
@@ -28,37 +28,39 @@ const DefaultContactModalwButton: NextPage = (props) => {
       >
         <Modal.Header>
           <Text id="modal-title" b size={18}>
-            Contact
+            Contact Info
           </Text>
         </Modal.Header>
         <Modal.Body>
-          <Spacer y={0} />
           <Input
             clearable
-            underlined
+            bordered
             fullWidth
             color="primary"
             size="md"
-            labelPlaceholder="Name"
+            placeholder="Your Name"
+            contentLeft={<FaUser />}
           />
-          <Spacer y={0} />
           <Input
             clearable
-            underlined
+            bordered
             fullWidth
             color="primary"
             size="md"
-            labelPlaceholder="E-mail"
+            placeholder="Your E-mail"
+            contentLeft={<FaEnvelope />}
           />
           <Textarea
             bordered
             label="Message"
-            placeholder="Write your thoughts"
+            placeholder="Let me know what you would like to talk to me about here!"
             rows={5}
           />
         </Modal.Body>
         <Modal.Footer>
-          <Button auto>Send</Button>
+          <div className={styles["send-button"]}>
+            <Button onPress={sendMessage}>Send</Button>
+          </div>
         </Modal.Footer>
       </Modal>
     </>
