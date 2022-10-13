@@ -7,10 +7,7 @@ import styles from "../../styles/components/modals/DefaultContactModalwButton.mo
 
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
-import {
-  closeContactModal,
-  openContactModal,
-} from "../../redux/features/modals/contact-modal-slice";
+import { toggleContactModal } from "../../redux/features/modals/contact-modal-slice";
 
 const DefaultContactModalwButton: NextPage = (props) => {
   const { isOpen } = useSelector((state: RootState) => state.contactModal);
@@ -21,7 +18,7 @@ const DefaultContactModalwButton: NextPage = (props) => {
   }
   return (
     <>
-      <Button auto shadow onPress={() => dispatch(openContactModal())}>
+      <Button auto shadow onPress={() => dispatch(toggleContactModal())}>
         Contact
       </Button>
       <Modal
@@ -29,7 +26,7 @@ const DefaultContactModalwButton: NextPage = (props) => {
         blur
         aria-labelledby="modal-title"
         open={isOpen}
-        onClose={() => dispatch(closeContactModal())}
+        onClose={() => dispatch(toggleContactModal())}
       >
         <Modal.Header>
           <Text id="modal-title" b size={18}>

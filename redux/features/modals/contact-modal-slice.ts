@@ -10,15 +10,11 @@ export const contactModalSlice = createSlice({
   name: "contactModal",
   initialState,
   reducers: {
-    openContactModal: (state) => {
-      state.isOpen = true;
-    },
-    closeContactModal: (state) => {
-      state.isOpen = false;
+    toggleContactModal: (state) => {
+      state.isOpen = !state.isOpen;
     },
   },
 });
 
-export const { openContactModal, closeContactModal } =
-  contactModalSlice.actions;
+export const { toggleContactModal } = contactModalSlice.actions;
 export default contactModalSlice.reducer;
