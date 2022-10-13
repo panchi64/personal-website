@@ -4,27 +4,31 @@ import { Button, Input, Modal, Text, Textarea } from "@nextui-org/react";
 import { FaEnvelope, FaUser } from "react-icons/fa";
 
 import styles from "../../../styles/components/default-contact-modal-w-button.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../../redux/store";
+import {
+  closeContactModal,
+  openContactModal,
+} from "../../../redux/features/modals/contact-modal-slice";
 
 const DefaultContactModalwButton: NextPage = (props) => {
-  function showContactModal() {
-    // TODO: Create a component to show as a modal when the button is pressed
-    console.log("Contact Modal hass been pressed!");
-  }
+  const { isOpen } = useSelector((state: RootState) => state.contactModal);
+  const dispatch = useDispatch();
 
   function sendMessage() {
     // TODO: Create a function to send the message to firebase or e-mail
   }
   return (
     <>
-      <Button auto shadow onPress={showContactModal}>
+      <Button auto shadow onPress={() => dispatch(openContactModal())}>
         Contact
       </Button>
       <Modal
         closeButton
         blur
         aria-labelledby="modal-title"
-        open={true}
-        onClose={showContactModal}
+        open={isOpen}
+        onClose={() => dispatch(closeContactModal())}
       >
         <Modal.Header>
           <Text id="modal-title" b size={18}>
