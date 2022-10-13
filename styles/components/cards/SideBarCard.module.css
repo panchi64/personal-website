@@ -3,7 +3,6 @@
   flex-direction: row-reverse;
 
   max-height: 90vh;
-  border: red 1px solid;
 }
 
 .sidebar-right {
@@ -48,7 +47,6 @@
     flex-direction: row-reverse;
 
     max-height: 90vh;
-    border: green 1px solid;
   }
   .sidebar-right {
     all: initial;
