@@ -5,6 +5,7 @@ import CustomizedNavbar from "../components/navbar/customized-navbar";
 import type { NextPage } from "next";
 import Head from "next/head";
 import DefaultContactModalwButton from "../components/modals/default-contact-modal-w-button";
+import SideBarCard from "../components/cards/side-bar-card";
 
 const Home: NextPage = () => {
   const { setTheme } = useNextTheme();
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
           },
         ]}
       />
+      <SideBarCard />
     </>
   );
 };
