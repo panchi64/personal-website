@@ -31,7 +31,7 @@ const SideBarCard: NextPage<{
             {header && (
               <>
                 {header.map((item) => (
-                  <Container key={item.id}>{item.component}</Container>
+                  <div key={item.id}>{item.component}</div>
                 ))}
               </>
             )}
@@ -39,16 +39,14 @@ const SideBarCard: NextPage<{
           {headerDivider && showDivider(headerDivider)}
           <Card.Body>
             {body &&
-              body.map((item) => (
-                <Container key={item.id}>{item.component}</Container>
-              ))}
+              body.map((item) => <div key={item.id}>{item.component}</div>)}
           </Card.Body>
           {footerDivider && showDivider(footerDivider)}
           <Card.Footer>
             {footer && (
               <>
                 {footer.map((item) => (
-                  <Container key={item.id}>{item.component}</Container>
+                  <div key={item.id}>{item.component}</div>
                 ))}
               </>
             )}
