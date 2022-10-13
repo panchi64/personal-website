@@ -4,7 +4,7 @@ import CustomizedNavbar from "../components/navbar/customized-navbar";
 import DefaultContactModalwButton from "../components/modals/default-contact-modal-w-button";
 import SideBarCard from "../components/cards/side-bar-card";
 
-import { Text } from "@nextui-org/react";
+import { Card, Text } from "@nextui-org/react";
 
 import type { NextPage } from "next";
 import Head from "next/head";

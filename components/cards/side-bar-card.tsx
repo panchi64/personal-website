@@ -10,9 +10,17 @@ const SideBarCard: NextPage<{
   header?: Array<Component>;
   body: Array<Component>;
   footer?: Array<Component>;
-}> = ({ header, body, footer }) => {
+  headerDivider?: boolean;
+  footerDivider?: boolean;
+}> = ({ header, headerDivider, body, footer, footerDivider }) => {
   // TODO: Add the capability of making the information in the sidebar dynamic by using firebase docs
   // this means enabling the capacity of changing text, images, and links within the sidebar as well as its position on the page (left or right or bottom)
+
+  const showDivider = (divider: boolean) => {
+    if (divider) {
+      return <Card.Divider />;
+    }
+  };
 
   return (
     <div className={styles["sidebar-container"]}>
@@ -28,12 +36,14 @@ const SideBarCard: NextPage<{
               </>
             )}
           </Card.Header>
+          {headerDivider && showDivider(headerDivider)}
           <Card.Body>
             {body &&
               body.map((item) => (
                 <Container key={item.id}>{item.component}</Container>
               ))}
           </Card.Body>
+          {footerDivider && showDivider(footerDivider)}
           <Card.Footer>
             {footer && (
               <>
