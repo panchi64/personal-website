@@ -3,13 +3,13 @@ import { NextPage } from "next";
 import { Button, Input, Modal, Text, Textarea } from "@nextui-org/react";
 import { FaEnvelope, FaUser } from "react-icons/fa";
 
-import styles from "../../../styles/components/default-contact-modal-w-button.module.css";
+import styles from "../../styles/components/default-contact-modal-w-button.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../../redux/store";
+import { RootState } from "../../redux/store";
 import {
   closeContactModal,
   openContactModal,
-} from "../../../redux/features/modals/contact-modal-slice";
+} from "../../redux/features/modals/contact-modal-slice";
 
 const DefaultContactModalwButton: NextPage = (props) => {
   const { isOpen } = useSelector((state: RootState) => state.contactModal);

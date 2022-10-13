@@ -1,10 +1,10 @@
 import { useTheme as useNextTheme } from "next-themes";
 
-import CustomizedNavbar from "../components/ui/customized-navbar";
+import CustomizedNavbar from "../components/navbar/customized-navbar";
 
 import type { NextPage } from "next";
 import Head from "next/head";
-import DefaultContactModalwButton from "../components/ui/modals/default-contact-modal-w-button";
+import DefaultContactModalwButton from "../components/modals/default-contact-modal-w-button";
 
 const Home: NextPage = () => {
   const { setTheme } = useNextTheme();
