@@ -27,30 +27,26 @@ const SideBarCard: NextPage<{
       <div className={styles["sidebar-right"]}>
         {/* TODO: Add the capacity to alter the card props/variants via props to this component */}
         <Card variant="bordered">
-          <Card.Header>
-            {header && (
+          {header &&
+            header.map((item) => (
               <>
-                {header.map((item) => (
-                  <div key={item.id}>{item.component}</div>
-                ))}
+                <Card.Header key={item.id}>{item.component}</Card.Header>
               </>
-            )}
-          </Card.Header>
+            ))}
           {headerDivider && showDivider(headerDivider)}
-          <Card.Body>
-            {body &&
-              body.map((item) => <div key={item.id}>{item.component}</div>)}
-          </Card.Body>
-          {footerDivider && showDivider(footerDivider)}
-          <Card.Footer>
-            {footer && (
+          {body &&
+            body.map((item) => (
               <>
-                {footer.map((item) => (
-                  <div key={item.id}>{item.component}</div>
-                ))}
+                <Card.Body key={item.id}>{item.component}</Card.Body>
               </>
-            )}
-          </Card.Footer>
+            ))}
+          {footerDivider && showDivider(footerDivider)}
+          {footer &&
+            footer.map((item) => (
+              <>
+                <Card.Footer key={item.id}>{item.component}</Card.Footer>
+              </>
+            ))}
         </Card>
       </div>
     </div>
