@@ -52,7 +52,7 @@
     all: initial;
     display: flex;
 
-    width: 25vw;
+    width: 20vw;
     padding: 1.5rem;
     overflow: hidden;
   }
