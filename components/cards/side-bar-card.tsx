@@ -1,4 +1,4 @@
-import { Card, Container, Grid, Text } from "@nextui-org/react";
+import { Card } from "@nextui-org/react";
 
 import styles from "../../styles/components/cards/SideBarCard.module.css";
 
@@ -29,23 +29,17 @@ const SideBarCard: NextPage<{
         <Card variant="bordered">
           {header &&
             header.map((item) => (
-              <>
                 <Card.Header key={item.id}>{item.component}</Card.Header>
-              </>
             ))}
           {headerDivider && showDivider(headerDivider)}
           {body &&
             body.map((item) => (
-              <>
                 <Card.Body key={item.id}>{item.component}</Card.Body>
-              </>
             ))}
           {footerDivider && showDivider(footerDivider)}
           {footer &&
             footer.map((item) => (
-              <>
                 <Card.Footer key={item.id}>{item.component}</Card.Footer>
-              </>
             ))}
         </Card>
       </div>
