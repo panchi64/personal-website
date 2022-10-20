@@ -8,10 +8,13 @@ import { Card, Text } from "@nextui-org/react";
 
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
   const { setTheme } = useNextTheme();
-  setTheme("dark");
+  useEffect(() => {
+    setTheme("dark");
+  }, [setTheme]);
 
   return (
     <>
@@ -26,7 +29,9 @@ const Home: NextPage = () => {
           // TODO: Replace this with a firebase docs connection/request to get the links
           { href: "/work", name: "Work" },
           { href: "/projects", name: "Projects" },
+          { href: "/hobbies", name: "Hobbies" },
           { href: "/blog", name: "Blog" },
+          { href: "/about", name: "About" },
         ]}
         buttons={[
           {
