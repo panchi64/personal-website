@@ -14,10 +14,13 @@ import {
 } from "@nextui-org/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Head from "next/head";
+import { useEffect } from "react";
 
 const PageInDevCard: NextPage = () => {
   const { setTheme } = useNextTheme();
-  setTheme("dark");
+  useEffect(() => {
+    setTheme("dark");
+  }, [setTheme]);
 
   return (
     <>

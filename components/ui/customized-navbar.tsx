@@ -34,7 +34,9 @@ const CustomizedNavbar: NextPage<{
           {buttons && (
             <>
               {buttons.map((button) => (
-                <Navbar.Item key={button.id}>{button.component}</Navbar.Item>
+                <Navbar.Item key={button.buttonID}>
+                  {button.component}
+                </Navbar.Item>
               ))}
             </>
           )}

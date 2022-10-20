@@ -1,6 +1,6 @@
 import React from "react";
 
 export interface Component {
-  id: string;
+  componentID: string;
   component: React.ReactNode;
 }

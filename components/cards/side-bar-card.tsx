@@ -29,17 +29,17 @@ const SideBarCard: NextPage<{
         <Card variant="bordered">
           {header &&
             header.map((item) => (
-                <Card.Header key={item.id}>{item.component}</Card.Header>
+              <Card.Header key={item.componentID}>{item.component}</Card.Header>
             ))}
           {headerDivider && showDivider(headerDivider)}
           {body &&
             body.map((item) => (
-                <Card.Body key={item.id}>{item.component}</Card.Body>
+              <Card.Body key={item.componentID}>{item.component}</Card.Body>
             ))}
           {footerDivider && showDivider(footerDivider)}
           {footer &&
             footer.map((item) => (
-                <Card.Footer key={item.id}>{item.component}</Card.Footer>
+              <Card.Footer key={item.componentID}>{item.component}</Card.Footer>
             ))}
         </Card>
       </div>

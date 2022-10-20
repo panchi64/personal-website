@@ -35,7 +35,7 @@ const Home: NextPage = () => {
         ]}
         buttons={[
           {
-            id: "contact",
+            componentID: "contact",
             component: <DefaultContactModalwButton />,
           },
         ]}
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
       <SideBarCard
         body={[
           {
-            id: "initial-paragraph",
+            componentID: "initial-paragraph",
             component: (
               <Text>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
