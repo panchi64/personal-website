@@ -2,20 +2,16 @@ import "../styles/globals.css";
 
 import type { AppProps } from "next/app";
 
-import { createTheme, NextUIProvider } from "@nextui-org/react";
+import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+import defaultDarkTheme from "../styles/themes/dark/defaultDarkTheme";
+import defaultLightTheme from "../styles/themes/light/defaultLightTheme";
 
 import { store } from "../redux/store";
 import { Provider } from "react-redux";
 
-const lightTheme = createTheme({
-  type: "light",
-  theme: {},
-});
-const darkTheme = createTheme({
-  type: "dark",
-  theme: {},
-});
+const lightTheme = defaultLightTheme;
+const darkTheme = defaultDarkTheme;
 
 function App({ Component, pageProps }: AppProps) {
   return (
