@@ -9,6 +9,12 @@ const defaultDarkTheme = createTheme({
       secondary: `rgb(87,87,87)`,
       tertiary: `rgb(135,135,135)`,
 
+      background: `rgb(49,48,49)`,
+
+      item_bg: `rgb(52,51,52)`,
+      item_divider:`rgb(62,61,62)`,
+      item_border: `rgb(73,72,73)`,
+
       callout_background: `rgb(29, 29, 31)`,
       callout_success: `rgb(2, 45, 2)`,
       callout_success_border: `rgb(68, 234, 68)`, //darkened success color by 25% (equivalent to darken(#cff3cf, 25%)
@@ -31,6 +37,7 @@ const defaultDarkTheme = createTheme({
       brown: `rgb(172,142,104)`,
       gray: `rgb(152,152,157)`,
       white: `rgb(255, 255, 255)`,
+      black: `rgb(0,0,0)`,
     }
   }
 });
