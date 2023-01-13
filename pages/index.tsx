@@ -4,6 +4,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import React, { useEffect } from "react";
 import MenuBar from "../components/ui/MenuBar";
+import SearchBar from "../components/ui/SearchBar";
 
 const Home: NextPage = () => {
   const { setTheme } = useNextTheme();
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <MenuBar>
-        {/*<SearchBar />*/}
+        <SearchBar />
         {/*<ProfileSection />*/}
         {/*<Items />*/}
       </MenuBar>

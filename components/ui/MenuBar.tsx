@@ -1,4 +1,3 @@
-import styles from '../../styles/components/ui/MenuBar.module.css'
 import React from "react";
 
 type MenuProps = {
@@ -7,11 +6,31 @@ type MenuProps = {
 const MenuBar = (props: MenuProps) => {
   return (
     <>
-      <div className={styles["menu-bar"]}>
+      <div
+        className="
+      bg-light-primary/72
+      dark:bg-dark-primary/72
+    
+      border-r-light-secondary
+      border-r-[1px]
+      
+      backdrop-blur-md
+
+      md:w-1/4
+      lg:w-1/6
+      
+      max-w-120
+      h-screen
+      
+      grid-cols-1
+      px-4
+      
+      z-50"
+      >
         {props.children}
       </div>
     </>
   );
-}
+};
 
 export default MenuBar;
