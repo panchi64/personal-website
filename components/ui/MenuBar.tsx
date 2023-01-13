@@ -8,10 +8,11 @@ const MenuBar = (props: MenuProps) => {
     <>
       <div
         className="
-      bg-light-primary/72
-      dark:bg-dark-primary/72
-    
+      bg-light-primary/[.72]
+      dark:bg-dark-primary/[.72]
+
       border-r-light-secondary
+      dark:border-r-dark-black
       border-r-[1px]
       
       backdrop-blur-md
@@ -23,7 +24,7 @@ const MenuBar = (props: MenuProps) => {
       h-screen
       
       grid-cols-1
-      px-4
+      p-4
       
       z-50"
       >
