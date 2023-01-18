@@ -5,7 +5,7 @@ interface MenuBarState {
 }
 
 const initialState: MenuBarState = {
-    selOption: "",
+    selOption: "home",
 }
 
 export const menuBarSlice = createSlice({
