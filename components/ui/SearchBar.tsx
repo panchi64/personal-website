@@ -15,8 +15,11 @@ const SearchBar = () => {
       
       flex
       mb-4
-      focus-within:border-light-blue
-      "
+
+      focus-within:outline
+      focus-within:outline-4
+    focus-within:outline-light-blue
+    "
     >
       <div className="m-1">
         <GoSearch className="text-light-black dark:text-dark-white" />
@@ -38,6 +41,9 @@ const SearchBar = () => {
         w-full
 
         outline-none
+        
+        selection:bg-light-blue
+        dark:selection:bg-dark-blue
         "
       />
     </div>
