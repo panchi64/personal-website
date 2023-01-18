@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       </Head>
       <MenuBar>
         {/* TODO: Figure out how to align the menu items in the center of the menu bar area */}
-        <div className="">
+        <div className="flex justify-center">
           <div className="max-w-xs ">
             <SearchBar />
             <ProfileSection />
