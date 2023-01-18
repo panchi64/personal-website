@@ -1,11 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
-
-import contactModalReducer from "./features/modals/contact-modal-slice";
+import {configureStore} from "@reduxjs/toolkit";
+import menuBarReducer from "./features/ui/menu-slice";
 
 export const store = configureStore({
-  reducer: {
-    contactModal: contactModalReducer,
-  },
+    reducer: {
+        menuBar: menuBarReducer,
+    },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
