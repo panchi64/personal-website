@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <div className="flex justify-center">
           <div className="max-w-xs ">
             <SearchBar />
-            <ProfileSection title="francisco casiano" subtitle="about"/>
+            <ProfileSection title="francisco casiano" subtitle="about" />
             {/*<Items />*/}
           </div>
         </div>
