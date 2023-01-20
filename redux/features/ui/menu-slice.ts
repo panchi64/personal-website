@@ -1,22 +1,22 @@
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface MenuBarState {
-    selOption: string;
+  selOption: string;
 }
 
 const initialState: MenuBarState = {
-    selOption: "home",
-}
+  selOption: "blog",
+};
 
 export const menuBarSlice = createSlice({
-    name: "menuBar",
-    initialState,
-    reducers: {
-        setSelOption: (state, action: PayloadAction<string>) => {
-            state.selOption = action.payload;
-        },
+  name: "menuBar",
+  initialState,
+  reducers: {
+    setSelOption: (state, action: PayloadAction<string>) => {
+      state.selOption = action.payload;
     },
+  },
 });
 
-export const {setSelOption} = menuBarSlice.actions;
+export const { setSelOption } = menuBarSlice.actions;
 export default menuBarSlice.reducer;

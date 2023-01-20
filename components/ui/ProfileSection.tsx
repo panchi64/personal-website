@@ -21,7 +21,7 @@ const ProfileSection = (props: { title: String; subtitle: String }) => {
   const subtitleTextColor =
     selectedOption == "home"
       ? "text-light-primary/75 dark:text-dark-white/75"
-      : "text-light-black/75 dark:text-dark-primary/75";
+      : "text-light-black/75 dark:text-dark-white/75";
 
   const profileClicked = () => {
     console.log("Profile clicked");

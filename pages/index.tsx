@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import React, { useEffect } from "react";
+import React from "react";
 
 import MenuBar from "../components/ui/MenuBar";
 import SearchBar from "../components/ui/SearchBar";
@@ -9,22 +9,56 @@ import ProfileSection from "../components/ui/ProfileSection";
 import MenuSections from "../components/ui/MenuSections";
 
 const menuSectionPayloadExample: any = {
-  "professional": [
-    "work",
-    "projects",
-    "research",
+  sections: [
+    {
+      title: "professional",
+      content: [
+        {
+          sectionName: "work",
+          sectionIcon: "bi-briefcase",
+        },
+        {
+          sectionName: "projects",
+          sectionIcon: "bi-kanban",
+        },
+        {
+          sectionName: "research",
+          sectionIcon: "bi-laptop",
+        },
+      ],
+    },
+    {
+      title: "hobbies",
+      content: [
+        {
+          sectionName: "blog",
+          sectionIcon: "bi-pencil-square",
+        },
+        {
+          sectionName: "photography",
+          sectionIcon: "bi-camera2",
+        },
+        {
+          sectionName: "sports",
+          sectionIcon: "",
+        },
+      ],
+    },
+    {
+      title: "tools",
+      content: [
+        {
+          sectionName: "finance",
+          sectionIcon: "",
+        },
+        {
+          sectionName: "productivity",
+          sectionIcon: "",
+        },
+      ],
+    },
   ],
-  "hobbies": [
-    "blog",
-    "photography",
-    "sports",
-  ],
-  "tools": [
-    "finance",
-    "productivity",
-    
-  ]
-}
+};
 
 const Home: NextPage = () => {
   return (
@@ -40,7 +74,12 @@ const Home: NextPage = () => {
           <div className="max-w-xs ">
             <SearchBar />
             <ProfileSection title="francisco casiano" subtitle="about" />
-            <MenuSections payload={ menuSectionPayloadExample } />
+
+            {menuSectionPayloadExample.sections.map((section: any) => {
+              return <MenuSections payload={section} key={section.title} />;
+            })}
+
+            <MenuSections payload={menuSectionPayloadExample} />
           </div>
         </div>
       </MenuBar>

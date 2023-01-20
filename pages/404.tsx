@@ -1,17 +1,9 @@
 import { NextPage } from "next";
 import Head from "next/head";
 
-import { useTheme as useNextTheme } from "next-themes";
-
 import { useEffect } from "react";
 
 const NotFound: NextPage = () => {
-  // TODO: Rewrite this whole thing to not use NextUI
-  const { setTheme } = useNextTheme();
-  useEffect(() => {
-    setTheme("dark");
-  }, [setTheme]);
-
   return (
     <>
       {/* 
