@@ -5,7 +5,7 @@ interface MenuBarState {
 }
 
 const initialState: MenuBarState = {
-  selOption: "blog",
+  selOption: "research",
 };
 
 export const menuBarSlice = createSlice({

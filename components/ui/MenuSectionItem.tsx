@@ -30,12 +30,12 @@ const MenuSectionItem = (props: { item: any }) => {
       href={"/" + itemDetails.sectionName.replaceAll(" ", "-")}
       onClick={itemClicked}
     >
-      <div className={"flex " + itemColors}>
+      <div className={"flex py-[1px] " + itemColors}>
         <i
           //   TODO: Find out why the icon is not showing up after work option
           className={"px-2 " + itemDetails.sectionIcon + " " + iconColors}
         ></i>
-        <p className={"capitalize text-base"}>{itemDetails.sectionName}</p>
+        <p className={"capitalize"}>{itemDetails.sectionName}</p>
       </div>
     </Link>
   );

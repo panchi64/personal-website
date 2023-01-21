@@ -40,7 +40,7 @@ const menuSectionPayloadExample: any = {
         },
         {
           sectionName: "sports",
-          sectionIcon: "",
+          sectionIcon: "bi-bicycle",
         },
       ],
     },
@@ -49,11 +49,11 @@ const menuSectionPayloadExample: any = {
       content: [
         {
           sectionName: "finance",
-          sectionIcon: "",
+          sectionIcon: "bi-cash-stack",
         },
         {
           sectionName: "productivity",
-          sectionIcon: "",
+          sectionIcon: "bi-diagram-3",
         },
       ],
     },
