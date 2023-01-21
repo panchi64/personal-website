@@ -32,7 +32,6 @@ const MenuSectionItem = (props: { item: any }) => {
     >
       <div className={"flex py-[1px] " + itemColors}>
         <i
-          //   TODO: Find out why the icon is not showing up after work option
           className={"px-2 " + itemDetails.sectionIcon + " " + iconColors}
         ></i>
         <p className={"capitalize"}>{itemDetails.sectionName}</p>

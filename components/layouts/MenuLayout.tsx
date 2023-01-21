@@ -67,7 +67,6 @@ const MenuLayout = (props: { children: any }) => {
   return (
     <div className="flex flex-row">
       <MenuBar>
-        {/* TODO: Figure out how to align the menu items in the center of the menu bar area */}
         <div className="flex justify-center">
           <div className="max-w-xs">
             <SearchBar />
