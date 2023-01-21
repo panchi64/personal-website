@@ -51,6 +51,10 @@ const menuSectionPayloadExample: any = {
           sectionName: "productivity",
           sectionIcon: "bi-diagram-3",
         },
+        {
+          sectionName: "oogie boogie",
+          sectionIcon: "bi-diagram-3",
+        },
       ],
     },
   ],
@@ -58,13 +62,14 @@ const menuSectionPayloadExample: any = {
 
 const MenuLayout = (props: { children: any }) => {
   const { children } = props;
+
+  // TODO: Fix the menu bar not sizing height correctly
   return (
-    //   TODO: Find out how to show the content of the page side by side with the menu bar and there are no rendering issues
-    <div className="">
+    <div className="flex flex-row">
       <MenuBar>
         {/* TODO: Figure out how to align the menu items in the center of the menu bar area */}
         <div className="flex justify-center">
-          <div className="max-w-xs ">
+          <div className="max-w-xs">
             <SearchBar />
             <ProfileSection title="francisco casiano" subtitle="about" />
 
@@ -76,7 +81,7 @@ const MenuLayout = (props: { children: any }) => {
           </div>
         </div>
       </MenuBar>
-      <div className="">{children}</div>
+      <div className="bg-dark-orange">poopy</div>
     </div>
   );
 };
