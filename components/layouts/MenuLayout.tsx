@@ -63,25 +63,26 @@ const menuSectionPayloadExample: any = {
 const MenuLayout = (props: { children: any }) => {
   const { children } = props;
 
-  // TODO: Fix the menu bar not sizing height correctly
   return (
-    <div className="flex flex-row">
+    <>
+      {/* TODO: Give the MenuBar the following div as an attribute */}
       <MenuBar>
         <div className="flex justify-center">
-          <div className="max-w-xs">
+          <div className="max-w-xs overflow-y-auto">
             <SearchBar />
             <ProfileSection title="francisco casiano" subtitle="about" />
-
             {menuSectionPayloadExample.sections.map((section: any) => {
               return <MenuSections payload={section} key={section.title} />;
             })}
-
-            <MenuSections payload={menuSectionPayloadExample} />
           </div>
         </div>
       </MenuBar>
-      <div className="bg-dark-orange">poopy</div>
-    </div>
+      {/* TODO: Make this go behind the menu to show the blur effect */}
+      <div className="bg-dark-orange z-0">
+        poopy
+        {/* children */}
+      </div>
+    </>
   );
 };
 
