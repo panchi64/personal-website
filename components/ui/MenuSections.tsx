@@ -9,7 +9,7 @@ const MenuSections = (props: { payload: any }) => {
   // TODO: Add API logic to fetch the section title and details regarding the section items
   return (
     <div className="flex flex-col mb-3 w-full">
-      <p className="capitalize text-light-secondary dark:text-dark-tertiary text-xs">
+      <p className="capitalize text-light-tertiary dark:text-dark-tertiary text-xs">
         {sectionTitle}
       </p>
       <div className="flex flex-col justify-center">
