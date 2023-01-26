@@ -229,7 +229,8 @@ const MenuLayout = (props: { children: any }) => {
               title='francisco casiano'
               subtitle='about'
             />
-            {/* TODO: Find a way to make the overflow-y-auto only make the Menu Sections area scrollable, keeping the profile section and searchbar visible at all times*/}
+            {/* TOOD: Find a way to style the scrollbar so it doesn't look so jarring? */}
+            {/* FIXME: Find a way to make the overflow-y-auto only make the Menu Sections area scrollable, keeping the profile section and searchbar visible at all times*/}
             {menuSectionPayloadExample.sections.map((section: any) => {
               return (
                 <MenuSections
