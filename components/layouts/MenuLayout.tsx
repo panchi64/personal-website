@@ -65,7 +65,6 @@ const MenuLayout = (props: { children: any }) => {
 
   return (
     <>
-      {/* TODO: Give the MenuBar the following div as an attribute */}
       <MenuBar>
         <div className="flex justify-center">
           <div className="max-w-xs overflow-y-auto">
@@ -78,7 +77,7 @@ const MenuLayout = (props: { children: any }) => {
         </div>
       </MenuBar>
       {/* TODO: Make this go behind the menu to show the blur effect */}
-      <div className="bg-dark-orange z-0">
+      <div className="bg-dark-orange h-screen">
         poopy
         {/* children */}
       </div>
