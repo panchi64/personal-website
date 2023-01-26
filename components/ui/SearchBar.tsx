@@ -1,6 +1,6 @@
 const SearchBar = () => {
   return (
-    <div className='bg-light-item-bg/[.72] dark:bg-dark-item-bg/[.72] border-light-item-border dark:border-dark-item-border border-[1px] rounded flex mb-4 focus-within:outline focus-within:outline-2 focus-within:outline-light-blue dark:focus-within:outline-dark-blue focus-within:outline-offset-[-2px]'>
+    <div className='bg-light-item-bg/[.72] dark:bg-dark-item-bg/[.72] border-light-item-border dark:border-dark-item-border border rounded flex mb-4 focus-within:outline focus-within:outline-2 focus-within:outline-light-blue dark:focus-within:outline-dark-blue focus-within:outline-offset-[-2px]'>
       <div className='mx-1 h-full'>
         <i className='bi-search text-light-black dark:text-dark-white place-self-center' />
       </div>
