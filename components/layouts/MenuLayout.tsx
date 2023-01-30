@@ -223,32 +223,37 @@ const MenuLayout = (props: { children: any }) => {
     <>
       <MenuBar>
         <div className='grid grid-col justify-center h-full'>
-          <div className='max-w-[240px] overflow-y-auto'>
+          <div className='max-w-[240px] overflow-hidden grid grid-flow-row'>
             <SearchBar />
             <ProfileSection
               title='francisco casiano'
               subtitle='about'
             />
-            {/* TOOD: Find a way to style the scrollbar so it doesn't look so jarring? */}
-            {/* FIXME: Find a way to make the overflow-y-auto only make the Menu Sections area scrollable, keeping the profile section and searchbar visible at all times*/}
-            {menuSectionPayloadExample.sections.map((section: any) => {
-              return (
-                <MenuSections
-                  payload={section}
-                  key={section.title}
-                />
-              );
-            })}
-          </div>
-          <div className='place-self-end w-full'>
-            <MenuFooter socialDetails={socialDetailsPayloadExample} />
+            {/* TODO: Find a way to style the scrollbar so it doesn't look so jarring? */}
+            <div className='overflow-y-auto'>
+              {menuSectionPayloadExample.sections.map((section: any) => {
+                return (
+                  <MenuSections
+                    payload={section}
+                    key={section.title}
+                  />
+                );
+              })}
+            </div>
+            <div className='w-full my-2'>
+              <MenuFooter socialDetails={socialDetailsPayloadExample} />
+            </div>
           </div>
         </div>
       </MenuBar>
       {/* TODO: Add spacing so that the content on the page does not cross over to behind the menubar */}
-      <div className='bg-dark-orange h-screen'>
-        poopy
-        {/* children */}
+      <div className='h-screen flex flex-row bg-light-background dark:bg-dark-background'>
+        {/* Spacer to prevent page content get stuck behind the  */}
+        <div className='sm:w-1/3 lg:w-1/5 sm:max-w-xs'></div>
+        <div className='w-full h-full'>
+          poopy
+          {/* children */}
+        </div>
       </div>
     </>
   );
