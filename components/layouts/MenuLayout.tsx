@@ -113,8 +113,8 @@ const MenuLayout = (props: { children: any }) => {
       <div className='h-screen flex flex-row bg-light-background dark:bg-dark-background'>
         {/* Spacer to prevent page content get stuck behind the  */}
         <div className='sm:w-1/3 lg:w-1/5 sm:max-w-xs'></div>
-        <div className='w-full h-full'>
-          poopy
+        <div className='flex-grow'>
+          
           {/* children */}
         </div>
       </div>
