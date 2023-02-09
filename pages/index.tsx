@@ -3,10 +3,7 @@ import Head from 'next/head';
 
 import React from 'react';
 
-import MenuBar from '../components/ui/menu/MenuBar';
-import SearchBar from '../components/ui/SearchBar';
-import ProfileSection from '../components/ui/ProfileSection';
-import MenuSections from '../components/ui/menu/MenuSections';
+
 
 const Home: NextPage = () => {
   return (

@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import MenuBar from '../ui/menu/MenuBar';
 import MenuFooter from '../ui/menu/MenuFooter';
 import MenuSections from '../ui/menu/MenuSections';
@@ -114,7 +115,7 @@ const MenuLayout = (props: { children: any }) => {
         {/* Spacer to prevent page content get stuck behind the  */}
         <div className='sm:w-1/3 lg:w-1/5 sm:max-w-xs'></div>
         <div className='flex-grow'>
-          
+          goomba
           {/* children */}
         </div>
       </div>
