@@ -7,6 +7,7 @@ const MenuFooter = (props: { socialDetails: any }) => {
 
   const toggleTheme = () => {
     // TODO: Find a way for the user to have their theme set to their system preference so that this button doesn't have to be clicked every time the page loads and the user's system preference is set to dark mode.
+    // FIXME: This does not seem to work on chrome in linux
     if (
       (localStorage.theme === 'dark' ||
         (!('theme' in localStorage) &&
@@ -25,7 +26,6 @@ const MenuFooter = (props: { socialDetails: any }) => {
         Weird width and height because the svg seems to scale to the width and height of the parent and I'm not gonna sit here for 1hr to find out why
         These values guarantee that the svg is ~24px wide and tall
       */}
-      {/* TODO: Add onClick to change the website's theme when the button is pressed */}
       <button onClick={toggleTheme}>
         <ThemeIcon
           width={39}

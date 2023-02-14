@@ -94,7 +94,7 @@ const MenuLayout = (props: { children: any }) => {
               title='francisco casiano'
               subtitle='about'
             />
-            {/* TODO: Find a way to style the scrollbar so it doesn't look so jarring? */}
+            {/* FIXME: Find a way to style the scrollbar so it doesn't look so jarring? */}
             <div className='overflow-y-auto flex-grow'>
               {menuSectionPayloadExample.sections.map((section: any) => {
                 return (
