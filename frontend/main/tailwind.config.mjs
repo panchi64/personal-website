@@ -11,8 +11,10 @@ module.exports = {
     },
     darkMode: "class",
     // TODO: Figure out how to include my colors into the nextui theme
+    // possible solution:
+    //        Put the overflow colors in the "theme > extend" part of the config and then call them accordingly
     plugins: [nextui({
-        prefix: "mac", // prefix for themes variables
+        prefix: "nextui", // prefix for themes variables
         addCommonColors: false, // override common colors (e.g. "blue", "green", "pink").
         defaultTheme: "dark", // default theme from the themes object
         defaultExtendTheme: "dark", // default theme to extend on custom themes
