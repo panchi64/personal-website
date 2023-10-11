@@ -1,0 +1,21 @@
+{
+  "name": "personal-website",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^3.2.4"
+  },
+  "description": "A personal portfolio, a web-accessible toolbox, a blog page, among other things for Francisco Casiano.",
+  "main": "index.astro",
+  "repository": "https://github.com/panchi64/personal-website",
+  "author": "Francisco Casiano",
+  "license": "MIT",
+  "private": true
+}
