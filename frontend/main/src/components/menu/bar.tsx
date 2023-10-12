@@ -1,5 +1,5 @@
 const MenuBar = () => {
-  return ;
-}
+  return;
+};
 
 export default MenuBar;

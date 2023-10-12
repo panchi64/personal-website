@@ -7,7 +7,8 @@ const SearchBar = () => {
         base: 'min-w-[120px] max-w-[480px] w-1/6 mx-1.5 my-4',
         mainWrapper: 'h-full',
         input: 'text-small',
-        inputWrapper: 'h-full font-normal bg-mac-light-item-bg rounded',
+        inputWrapper:
+          'h-full font-normal bg-mac-light-item-bg rounded shadow-none',
       }}
       startContent={
         <MagnifyingGlassIcon className='h-6 w-6 text-mac-light-tertiary' />

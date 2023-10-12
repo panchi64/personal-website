@@ -98,8 +98,8 @@ const MenuLayout = (props: { children: any }) => {
               {menuSectionPayloadExample.sections.map((section: any) => {
                 return (
                   <Sections
-                    // payload={section}
-                    // key={section.title}
+                  // payload={section}
+                  // key={section.title}
                   />
                 );
               })}
