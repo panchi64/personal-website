@@ -1,62 +1,51 @@
 # Website Requirements
 
-## UI
+## UI Design Guidelines
 
 ### Menu
 
-If found in the menu it must have:
-
-- A max width
-- A max height
-- Doesn't fill up the complete menu area = Needs a designated size
-- Correctly and dynamically adjust to a given screen size
+- **Size Constraints**
+  - _Maintain a maximum width and height_
+  - _Designate a specific size to smaller components_
+- **Responsive Design**
+  - _Ensure it dynamically adjusts to different screen sizes_
 
 ### React Components
 
 #### Raw Components
 
-Must have:
-
-- Dynamically changeable dark and light mode variant depending on the current theme the website is in
-- Mac colors already designated
+ - **Theme Adaptation**
+   - _Capable of changing between dark and light modes based on the website's theme_
+   - _Utilize predefined Mac color schemes_
 
 #### Callouts
 
-Must have:
-
-- Mac color scheme
-- Dark and light variants
-- Dynamically adjustable title and description
-- Color dynamically adjusting to a given severity/success rate
-- Max width
-- Max height
-- Show up in an appropriate screen location (not be a popup)
-- Dismissible
-- Fade out after a small amount of time
+- Visual Consistency:
+  - _Follow Mac color scheme for uniformity_
+  - _Provide both dark and light variants_
+  - _Customize title, description, and color based on severity or success rate_
+  - _Apply size limitations_
+  - _Display appropriately on the screen, not as pop-ups_
+  - _Allow for dismissal_
+  - _Implement a timed fade-out_
 
 #### Buttons
 
-Must have:
-
-- Mac color scheme
-- Dark and light variants
-- Dynamically adjustable labels
-- If it has custom animations or effects
-  - Must be smooth
-- If it hyperlinks
-  - Link has to open in a new tab
+- **Consistent Appearance**
+  - _Adhere to Mac color scheme and offer dark and light options_
+  - _Labels should be dynamically adjustable_
+  - _Smooth animations and effects (if applies)_
+  - _Open hyperlinked content in a new tab_
 
 ### Mobile
 
-Requirements for mobile:
-
-- Stupidly simple to use
-- Everything must be accessible with one hand
-- Everything must be accessible with one or two taps
-- Playable media can either be contained to its current spot, popped out as a PnP, or be fullscreen
-- Images must render in the minimum quality possible but still look high resolution
-- Images must be zoomable
-- If an image goes fullscreen it must be fetched at native resolution and quality
+- User-Friendly Mobile Experience:
+  - _Prioritize simplicity and one-handed accessibility_
+  - _Enable all functions within one or two taps_
+  - _Manage playable media in-place, as pop-outs, or in fullscreen_
+  - _Optimize image quality for performance without sacrificing resolution_
+  - _Support image zooming_
+  - _Fetch native resolution for fullscreen images_
 
 ## UX
 
