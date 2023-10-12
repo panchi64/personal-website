@@ -9,7 +9,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                // Colors do be used for dark mode
+                // Dark Mode
                 'mac-dark-primary': `#0e0e0e`,
                 'mac-dark-secondary': `#575757`,
                 'mac-dark-tertiary': `#878787`,
@@ -44,7 +44,7 @@ module.exports = {
                 'mac-dark-white': `#ffffff`,
                 'mac-dark-black': `#000000`,
 
-                // Colors do be used for light mode
+                // Light Mode
                 'mac-light-primary': `#f9f9f9`,
                 'mac-light-secondary': `#c1c1c1`,
                 'mac-light-tertiary': `#7b7b7b`,
