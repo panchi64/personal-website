@@ -1,0 +1,43 @@
+# Website TODOs
+
+- Build
+  - [ ] Menu layout
+  - [ ] Website viewport
+  - [ ] 404 page
+    - Generative art surrounding the 404 message
+    - Contains a link to the generative art code on github
+    - Link back to home page
+  - [ ] Blog page
+  - [ ] Work history page
+  - [ ] About page + Contact page (merged together in the same web page)
+  - [ ] Photography page
+  - [ ] Web tools page
+  - [ ] Menu sections
+  - [ ] Menu section content
+  - [ ] Introduce dynamic content support for UI
+    - [ ] Icon change theme button
+  - [ ] Dashboard page
+  - [ ] Login page
+  - [ ] Login logic
+  - [ ] API in Rust
+  - [ ] Backend setup
+  - [ ] CI/CD implementation
+  - [ ] Secret management for API
+  - [ ] Yubikey support
+  - [ ] 2FA support
+  - [ ] SMS notification system
+  - [ ] Page analytics setup
+  - [ ] Fuzzy search website wide
+    - [ ] Search by tag
+    - [ ] Search by title
+    - [ ] Search by content
+    - [ ] Search by date
+    - [ ] Search by technology
+  - [ ] Blog post pipeline
+    - [ ] Dynamic gradients for each blog post
+    - [ ] Blog tags
+  - [ ] Menu has frosted glass effect with graininess
+  - [ ] Changeable accent colors for website
+  - [ ] Internationalization support
+  - [ ] Dark mode implementation
+  - [ ] Mobile version of the website
