@@ -1,6 +1,10 @@
 # Personal Website
 
-Welcome to the source code of my personal website which should host all of my work and personal interests.
+Welcome to the source code of my website which should host all of my work and personal interests.
+
+The overall design of the website is currently being developed but it should look like this once completed:
+![image](https://github.com/panchi64/personal-website/assets/34542704/ef094beb-f072-4ce6-bc6c-8f11d376ed18)
+
 
 ## Getting Started
 
